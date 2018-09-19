@@ -1,0 +1,68 @@
+.login-container {
+    height: 50vh;
+    width: 80%;
+    margin: auto;
+}
+
+.form-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.input-container {
+    margin: 5px;
+}
+
+.login-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-btn {
+    height: 50px;
+    width: 50%;
+    background-color: #b71c1c;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 0px #c62828;
+    text-align: center;
+    font-size: 1em;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.login-btn:hover {
+    transition: .5s;
+    background-color: whitesmoke;
+    color:#b71c1c; 
+}
+
+.demo-acct-info {
+    width: 75%;
+}
+
+.register-input {
+    border: 0;
+    border-bottom: 2px solid #2D3E3F;
+    background-color: #ED4948;
+    color: #2D3E3F;
+}
+
+
+
+@media(min-width: 750px) {
+    .login-container {
+        height: 50vh;
+        width: 50%;
+        margin: auto;
+    }
+    .login-btn {
+        width: 50%;
+    }
+}
+

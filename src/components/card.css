@@ -1,0 +1,23 @@
+.card-container {
+    margin: 15px 10px;
+    background-color: #b71c1c;
+    box-shadow: 2px 2px 5px 0px #c62828;
+    border-radius: 4px; 
+    color: whitesmoke;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.exit-btn {
+    text-align: right;
+    background-color: #e53935;
+    border-radius: 4px;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.exit-btn:hover {
+    background-color: whitesmoke;
+    color: #e53935;
+}

@@ -1,0 +1,47 @@
+.dashboard-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.log-workout-btn {
+    display: inline-block;
+    background-color: #b71c1c;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 0px #c62828; 
+    text-decoration: none;
+    color: whitesmoke;
+    height: 30px;
+    width: 40%;
+    line-height: 33px;
+}
+
+.log-workout-btn:hover {
+    transition: .5s;
+    background-color: whitesmoke;
+    color:#b71c1c; 
+}
+
+.workout-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 10px;
+}
+
+.card {
+    min-width: 280px;
+    max-width: 320px;
+}
+
+
+
+@media(min-width: 750px) {
+    .log-workout-btn {
+        width: 25%;
+    }
+
+}

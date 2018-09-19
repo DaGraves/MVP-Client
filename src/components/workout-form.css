@@ -1,0 +1,55 @@
+.workout-form {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+
+.general-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.field-container {
+    padding: 5px;
+}
+.submit-btn-box {
+    text-align: center;
+}
+
+.submit-btn {
+    margin: 10px;
+    background-color: #b71c1c;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 0px #c62828;
+    font-size: 1em;
+    width: 40%;
+    height: 40px;
+    color: whitesmoke;
+}
+
+.submit-btn:hover {
+    transition: .5s;
+    background-color: whitesmoke;
+    color:#b71c1c; 
+}
+
+@media(min-width: 750px) {
+    .workout-form {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .field-container {
+        margin: 10px;
+    }
+}
