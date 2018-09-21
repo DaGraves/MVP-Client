@@ -58,4 +58,31 @@ fieldset
     .field-container {
         margin: 10px;
     }
+
+    .exerciseType
+    {
+        background-color: whitesmoke;
+    }
+}
+
+@media (min-width: 991px)
+{
+    .form-title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 200px;
+    }
+    
+    .general-inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .form-input
+    {
+        text-align: center;
+    }
 }

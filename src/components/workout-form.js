@@ -3,6 +3,8 @@ import {Field, reduxForm, focus} from 'redux-form';
 import Input from './input';
 import {saveWorkout} from '../actions/workouts';
 import {required, nonEmpty, isTrimmed} from '../validators';
+import { hasTouch } from 'detect-touch';
+
 import './workout-form.css';
 
 export class WorkoutForm extends React.Component {
@@ -37,10 +39,20 @@ export class WorkoutForm extends React.Component {
         .then(caloriesBurned => {
             values.caloriesBurned = caloriesBurned;
              this.props.dispatch(saveWorkout(values));
+             if (hasTouch === false){
+                return this.props.history.push("/dashboard");
+            }
+             
         });
     }
 
     render() {
+        let swipeLeft;
+        if (hasTouch === true){
+            swipeLeft = (
+                <h3>Swipe Left to See Past Logs</h3>
+            )
+        }
 
         return(
             <form className="workout-form"
@@ -48,7 +60,7 @@ export class WorkoutForm extends React.Component {
                     this.onSubmit(values)
             )}>
             <legend className="form-title">Log Workout</legend>
-            <p>Swipe Left To See Past Logs</p>
+            {swipeLeft}
             <fieldset>
                 <div className="general-inputs">
                     <div className="field-container">

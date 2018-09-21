@@ -7,15 +7,16 @@
     "enzyme-adapter-react-16": "^1.5.0"
   },
   "dependencies": {
+    "detect-touch": "^1.1.1",
     "jwt-decode": "^2.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
+    "react-scripts": "^1.1.5",
     "react-swipeable-views": "^0.12.17",
     "redux": "^3.6.0",
     "redux-form": "^7.3.0",
-    "react-scripts": "^1.1.5",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {

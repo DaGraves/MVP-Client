@@ -6,6 +6,8 @@ import {retrieveWorkouts, getWorkouts, removeWorkout} from '../actions/workouts'
 import SwipeableViews from 'react-swipeable-views';
 import WorkoutForm from './workout-form';
 import Card from './card';
+import {Link} from 'react-router-dom';
+import { hasTouch } from 'detect-touch';
 
 
 import './dashboard.css';
@@ -20,7 +22,6 @@ export class Dashboard extends React.Component {
     }
 
 getId(id) {
-    console.log('test');
     this.props.dispatch(removeWorkout(id))
     this.props.dispatch(retrieveWorkouts())
     .then(results => {
@@ -36,16 +37,35 @@ getId(id) {
             <Card handleClick={(id) => this.getId(id)} {...workout} />
         </li>
         )
+        let mobile;
+        if (hasTouch === true){
+            mobile = (
+                <SwipeableViews>
+                <WorkoutForm></WorkoutForm>
+                {workouts}
+            </SwipeableViews>
+            )
+        }
+        let desktop;
+        if (hasTouch === false){
+            desktop = (
+                <div>
+                    <Link className="link" to="/workouts">Add New Workout</Link>
+                    <h2>Past Workouts</h2>
+                    {workouts}
+                </div>
+            )
+        }
 
         return (
-            <section className="dashboard-container">
+            <div className="dashboard-container">
                 <ul className="workout-list">
-                <SwipeableViews>
-                    <WorkoutForm></WorkoutForm>
-                    {workouts}
-                </SwipeableViews>
+                    <div className="desktop-cards">
+                    {desktop}
+                    </div>
+                    {mobile}
                 </ul>
-            </section>
+            </div>
         );
     }
 }

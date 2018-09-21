@@ -29,16 +29,19 @@ header nav {
     line-height: 120px;
     display: flex;
 }
-button .link
+.logout-link
 {
     color: white;
+    background-color: transparent;
     font-size: 20px;
     margin: 0;
     padding: 0;
     display: block;
+    border: none;
     padding-right: 15px;
     padding-left: 15px;
     font-family: 'Armata', sans-serif;
+    text-align: center;
 }
 
 .link {
@@ -98,6 +101,20 @@ button .link
         display: block;
         text-align: center;
 
+    }
+
+        header .nav-links 
+    {
+        display: block;
+        text-align: center;
+
+    }
+
+    header .logout-link
+    {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
     }
 
     header .link 
