@@ -1,6 +1,9 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import Enzyme from 'enzyme';
 
+Enzyme.configure({adapter: new Adapter()});
 import Card from './card';
 
 describe('<Card/>', () => {

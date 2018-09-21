@@ -1,9 +1,16 @@
 .workout-form {
+    font-family: 'Armata', sans-serif;
+
+    color: whitesmoke;
     margin: 0 auto;
     height: 100%;
     width: 100%;
 }
 
+fieldset
+{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )
+}
 
 .general-inputs {
     display: flex;
@@ -28,9 +35,8 @@
 
 .submit-btn {
     margin: 10px;
-    background-color: #b71c1c;
+    background-color: #60b0f4;
     border-radius: 4px;
-    box-shadow: 2px 2px 5px 0px #c62828;
     font-size: 1em;
     width: 40%;
     height: 40px;
@@ -40,7 +46,7 @@
 .submit-btn:hover {
     transition: .5s;
     background-color: whitesmoke;
-    color:#b71c1c; 
+
 }
 
 @media(min-width: 750px) {

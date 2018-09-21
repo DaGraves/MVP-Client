@@ -1,10 +1,12 @@
 .register-container {
+    
     line-height: 1.5;
     border-radius: 4px;
     text-align: center;
 }
 
 .register-form {
+    
     display: flex;
     height: 100%;
     width: 100%;
@@ -15,19 +17,22 @@
 }
 
 .register-title {
+    
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Armata', sans-serif;
+    color: whitesmoke;
 }
 
 .register-btn {
     margin: 10px;
     height: 40px;
-    width: 50%;
-    background-color: #b71c1c;
+    width: fit-content;
+    background-color: #60b0f4;
     padding: 5px;
     border-radius: 4px;
-    box-shadow: 2px 2px 5px 0px #c62828;
+    box-shadow: 2px 2px 5px 0px #1358a7;
     text-align: center;
     font-size: 1em;
     color: whitesmoke;
@@ -54,11 +59,11 @@
     }
 
     .register-btn {
-        width: 30%;
+        width: fit-content;
     }
 
     .register-form {
-        margin-top: 20px;
+        margin-top: 200px;
         justify-content: flex-start;
     }
 }

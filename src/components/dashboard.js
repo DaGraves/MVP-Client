@@ -1,9 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
-import {Link} from 'react-router-dom';
 import {fetchProtectedData} from '../actions/protected-data';
 import {retrieveWorkouts, getWorkouts, removeWorkout} from '../actions/workouts';
+import SwipeableViews from 'react-swipeable-views';
+import WorkoutForm from './workout-form';
 import Card from './card';
 
 
@@ -25,8 +26,9 @@ getId(id) {
     .then(results => {
         return this.props.dispatch(getWorkouts(results));
     });
-}
 
+
+}
 
     render() {
         const workouts = this.props.exercises.map((workout, index) => 
@@ -34,12 +36,14 @@ getId(id) {
             <Card handleClick={(id) => this.getId(id)} {...workout} />
         </li>
         )
+
         return (
             <section className="dashboard-container">
-                <h1>Dashboard</h1>
-                <Link className="log-workout-btn" to="/workouts">Log Workout</Link>
                 <ul className="workout-list">
-                {workouts}
+                <SwipeableViews>
+                    <WorkoutForm></WorkoutForm>
+                    {workouts}
+                </SwipeableViews>
                 </ul>
             </section>
         );

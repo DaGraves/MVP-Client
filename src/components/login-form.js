@@ -3,9 +3,7 @@ import {Field, reduxForm, focus} from 'redux-form';
 import Input from './input';
 import {login} from '../actions/auth';
 import {required, nonEmpty} from '../validators';
-import {Link} from 'react-router-dom';
 
-//CSS
 import './login-form.css';
 
 export class LoginForm extends React.Component {
@@ -56,7 +54,7 @@ export class LoginForm extends React.Component {
                                 Log In
                             </button>
                         </fieldset>
-                        <Link className="register-link" to="/register">Click here to register</Link>
+                        
                 </form>
             </section>
         );

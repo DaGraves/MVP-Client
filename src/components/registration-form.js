@@ -1,6 +1,5 @@
 import React from 'react';
 import {Field, reduxForm, focus} from 'redux-form';
-import {Link} from 'react-router-dom';
 import {registerUser} from '../actions/users';
 import {login} from '../actions/auth';
 import Input from './input';
@@ -65,7 +64,7 @@ export class RegistrationForm extends React.Component {
                         Register
                     </button>
                 </fieldset>
-                <Link className="register-link" to="/">Click here to login</Link>
+            
             </form>
         );
     }

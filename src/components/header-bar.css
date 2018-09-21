@@ -1,13 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    
 }
 
 header {
     height: 120px;
     position: absolute;
-
     top: 0;
     left: 0;
     padding: 0 100px;
@@ -15,12 +14,13 @@ header {
     box-sizing: border-box;
 }
 
-header .app-logo {
+header .logo {
     height: 120px;
     line-height: 50px;
     font-size: 24px;
     float: left;
     font-weight: bold;
+    margin-left: -50px;
 }
 
 header nav {
@@ -28,6 +28,17 @@ header nav {
     height: 120px;
     line-height: 120px;
     display: flex;
+}
+button .link
+{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Armata', sans-serif;
 }
 
 .link {
@@ -38,12 +49,13 @@ header nav {
     display: block;
     padding-right: 15px;
     padding-left: 15px;
+    font-family: 'Armata', sans-serif;
 
 }
 
 .link:hover {
-    color: #E0E0E0;
-    background: #eff0f1;
+    color: #60b0f4;
+    
 }
 
 .menu-toggle {
@@ -72,7 +84,7 @@ header nav {
         width: 100%;
         height: calc(100vh - 50px);
         background: #333;
-
+        z-index: 1;
         top: 78px;
         left: -100%;
         transition: 0.5s;
@@ -87,16 +99,18 @@ header nav {
         text-align: center;
 
     }
+
     header .link 
     {
         border-bottom: 1px solid rgba(0,0,0, .2);
 
     }
-    header .app-logo {
+    header .logo {
         height: 78px;
         line-height: 50px;
         font-size: 24px;
         float: left;
         font-weight: bold;
+        margin-left: -30px;
     }
 }

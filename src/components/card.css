@@ -1,17 +1,22 @@
 .card-container {
-    margin: 15px 10px;
-    background-color: #b71c1c;
-    box-shadow: 2px 2px 5px 0px #c62828;
-    border-radius: 4px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content:flex-start;
+    margin-top: 70px;
+    margin-left: 20px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
     color: whitesmoke;
     text-align: left;
     padding: 15px;
     font-size: 18px;
+    font-family: 'Armata', sans-serif;
+
 }
 
 .exit-btn {
     text-align: right;
-    background-color: #e53935;
+    background-color: #60b0f4;
     border-radius: 4px;
     color: whitesmoke;
     padding: 10px;
@@ -19,5 +24,4 @@
 
 .exit-btn:hover {
     background-color: whitesmoke;
-    color: #e53935;
 }

@@ -10,8 +10,8 @@ export class WorkoutForm extends React.Component {
       return fetch(`https://trackapi.nutritionix.com/v2/natural/exercise`, {
             method: 'POST',
             headers: {
-                'x-app-id': "a4037e37",
-                'x-app-key': "194f7f880bbb4e577e60740892e9961e",
+                'x-app-id': "90ca78fe",
+                'x-app-key': "dacc0f95110653085d49f04c0a2be0b1",
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -37,7 +37,6 @@ export class WorkoutForm extends React.Component {
         .then(caloriesBurned => {
             values.caloriesBurned = caloriesBurned;
              this.props.dispatch(saveWorkout(values));
-            return this.props.history.push("/dashboard");
         });
     }
 
@@ -49,30 +48,14 @@ export class WorkoutForm extends React.Component {
                     this.onSubmit(values)
             )}>
             <legend className="form-title">Log Workout</legend>
+            <p>Swipe Left To See Past Logs</p>
             <fieldset>
                 <div className="general-inputs">
-                    <div className="field-container">
-                        <label htmlFor="workoutName">Workout Name:</label>
-                        <Field component={Input} type="text" name="workoutName" 
-                            validate={[required, nonEmpty, isTrimmed]}/>
-                    </div>
-                    
                     <div className="field-container">
                         <label htmlFor="date">Date:</label>
                         <Field component={Input} type="date" name="date"
                         validate={[required, nonEmpty, isTrimmed]}/>
                     </div>
-                    
-                    <div className="field-container">
-                        <label htmlFor="liftTime">Time spent exercising (minutes):</label>
-                        <Field
-                            component={Input}
-                            type="number"
-                            name="exerciseTime"
-                            validate={[required, nonEmpty, isTrimmed]} />
-                    </div>
-                    
-                
                     <div className="field-container">
                     <label htmlFor="exerciseType">Exercise Type:</label><br/>
                         <Field
@@ -90,13 +73,21 @@ export class WorkoutForm extends React.Component {
                             <option value="Cycling">Cycling</option>
                         </Field>
                     </div>
+                    <div className="field-container">
+                        <label htmlFor="liftTime">Time spent exercising (minutes):</label>
+                        <Field
+                            component={Input}
+                            type="number"
+                            name="exerciseTime"
+                            validate={[required, nonEmpty, isTrimmed]} />
+                    </div>
                     
                     <div className="field-container">
                     <label htmlFor="notes">Notes:</label><br/>
                         <Field
                             component="textarea"
                             name="notes"
-                            validate={[required]}/>
+                            />
                     </div>
                 </div>
                 <div className="submit-btn-box">

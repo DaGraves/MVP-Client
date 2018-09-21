@@ -1,21 +1,63 @@
-.home-container {
-    line-height: 1.5;
-    border-radius: 4px;
-    text-align: center;
-    color: white;
+.welcome-container {
+    padding: 30px;
+
+    
 }
 
-.landing-container {
-    height: 85%;
-    width: 85%;
-    margin: 0 auto;
+.welcome 
+{
+    color: whitesmoke;
+    
 }
 
-.landing-title {
-    font-family: "Black Ops One", cursive;
+@media (max-width: 991px)
+{
+    .welcome-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-title
+{
+    display: flex;
+    color: whitesmoke;
+    margin-top: 100px;
+    font-family: 'Armata', sans-serif;
+    font-size: 48px;
+}
+.welcome-body
+{
+    color: whitesmoke;
+    font-family: 'Armata', sans-serif;
+    font-size: 20px;
+}
 }
 
-.register-link {
-    color: #2D3E3F;
-    text-decoration: none;
+@media (min-width: 991px)
+{
+    .welcome-container
+{
+
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin-left: 70px;
+}
+.welcome-title
+{
+    display: flex;
+    color: whitesmoke;
+    font-family: 'Armata', sans-serif;
+    margin-top: 400px;
+    font-size: 48px;
+}
+
+.welcome-body
+{
+    max-width: 400px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
 }

@@ -13,20 +13,40 @@ export class HeaderBar extends React.Component {
     }
 
     render() {
-        // Only render the log out button if we are logged in
+        let dashboardButton;
         let logOutButton;
         if (this.props.loggedIn) {
+            dashboardButton = (
+                <Link className="link" to="/dashboard">Dashboard</Link>
+            )   
             logOutButton = (
-                <button className="logout-link" onClick={() => this.logOut()}>Log out</button>
+                <button className="link" onClick={() => this.logOut()}>Log out</button>
             );
+        }
+        let registerButton;
+        let loginButton;
+        if (this.props.loggedOut){
+            registerButton = (
+                <Link className="link" to="/register">Register</Link>
+            )
+            loginButton = (
+                <Link className="link" to="/login">Login</Link>
+            )
         }
         return (
             <header className="nav-container">
+                <div className="logo">
+                    <img
+                    className="logo"
+                    src={require('../images/logo.png')}
+                    alt="CRG Logo">
+                    </img>
+                </div>
                 <nav className="nav-links">
-                    <Link className="link" to="/login">Login</Link>
-                    <Link className="link" to="/register">Sign Up</Link>
-                    <Link className="link" to="/dashboard">Dashboard</Link>
+                    {registerButton}
+                    {dashboardButton}
                     {logOutButton}
+                    {loginButton}
                 </nav>
                 <div className="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
             </header>
@@ -35,7 +55,8 @@ export class HeaderBar extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    loggedIn: state.auth.currentUser !== null
+    loggedIn: state.auth.currentUser !== null,
+    loggedOut: state.auth.currentUser === null
 });
 
 export default connect(mapStateToProps)(HeaderBar);

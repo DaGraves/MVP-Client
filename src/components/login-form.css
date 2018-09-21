@@ -1,4 +1,5 @@
 .login-container {
+    
     height: 50vh;
     width: 80%;
     margin: auto;
@@ -19,17 +20,20 @@
 }
 
 .login-title {
+    margin-top: 200px;
     font-size: 1.5em;
     margin-bottom: 10px;
+    font-family: 'Armata', sans-serif;
+    color: whitesmoke;
     font-weight: bold;
 }
 
 .login-btn {
     height: 50px;
     width: 50%;
-    background-color: #b71c1c;
+    background-color: #60b0f4;
     border-radius: 4px;
-    box-shadow: 2px 2px 5px 0px #c62828;
+    box-shadow: 2px 2px 5px 0px #1358a7;
     text-align: center;
     font-size: 1em;
     color: whitesmoke;
