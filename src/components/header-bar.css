@@ -44,6 +44,11 @@ header nav {
     text-align: center;
 }
 
+.logout-link:hover {
+    color: #60b0f4;
+    
+}
+
 .link {
     color: white;
     font-size: 20px;
