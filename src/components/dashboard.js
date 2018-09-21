@@ -50,7 +50,7 @@ getId(id) {
         if (hasTouch === false){
             desktop = (
                 <div>
-                    <Link className="link" to="/workouts">Add New Workout</Link>
+                    <Link className="button-link" to="/workouts">+ Add New Workout</Link>
                     <h2>Past Workouts</h2>
                     {workouts}
                 </div>
