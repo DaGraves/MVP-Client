@@ -11,3 +11,11 @@ Link to server repo https://github.com/DaGraves/MVP-Server
 ![Image](https://github.com/DaGraves/MVP-Client/blob/master/src/images/screenshots/landingpage2.png)
 ![Image](https://github.com/DaGraves/MVP-Client/blob/master/src/images/screenshots/dashboard.png)
 ![Image](https://github.com/DaGraves/MVP-Client/blob/master/src/images/screenshots/log.png)
+
+### Tech Stack
+* React
+* Redux
+* Swipeable-Views
+* Detech-Touch
+* Node
+* Mongo
