@@ -8,4 +8,4 @@ Link to server repo https://github.com/DaGraves/MVP-Server
 
 ### Screenshots
 
-![Image](https://github.com/DaGraves/MVP-Client/blob/master/src/images/screenshots/landingpage.png)
+![Image](https://github.com/DaGraves/MVP-Client/blob/master/src/images/screenshots/landingpage2.png)
