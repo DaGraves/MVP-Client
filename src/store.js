@@ -18,8 +18,6 @@ const store = createStore(
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
     applyMiddleware(thunk)
 );
-
-// Hydrate the authToken from localStorage if it exist
 const authToken = loadAuthToken();
 if (authToken) {
     const token = authToken;

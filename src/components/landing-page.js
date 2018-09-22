@@ -13,8 +13,7 @@ export function LandingPage(props) {
         <div className="welcome-container">
             <h1 className="welcome-title">Welcome to Calories R Gone</h1>
             <div className="welcome-body">
-                <p>A easy to use workout tracker that calculates your calories burned for you. Simply, choose the type 
-                of exercise you did and log the duration. Look at past workouts easily in your dashboard.</p>
+                <p>This is a quick and easy app that allows you to log in your workout and see the calories that you burned.</p>
                 <p>To get a full expeirence of this app. Login using the username of "guest" and password of "password1"</p>
             </div>
             </div>

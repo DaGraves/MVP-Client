@@ -6,7 +6,6 @@ import { deleteWorkout,
 
 describe('workoutReducer', () => {
 
-    //dummy data
     const workout = {
         workoutName: 'test',
         date: '07/12/2018',

@@ -8,7 +8,6 @@ import {
 } from '../actions/auth';
 
 describe('authReducer', () => {
-    //dummy data
     const authToken =  'testToken';
     const currentUser =  'demoAccount';
     const loading = false;

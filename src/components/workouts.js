@@ -1,10 +1,7 @@
-//REACT
 import React from 'react';
 import {connect} from 'react-redux';
-
 import WorkoutForm from './workout-form';
 
-//CSS
 import './workouts.css';
 
 export class Workouts extends React.Component {
